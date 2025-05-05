@@ -1,145 +1,68 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phantom Anti-Cheat</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
+  <header>
+    <nav>
+      <div class="logo">Phantom</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+    </nav>
+  </header>
 
-header {
-  background-color: #1e1e1e;
-  padding: 1rem;
-  border-radius: 0 0 20px 20px;
-}
+  <section class="hero">
+    <h1>Phantom Anti-Cheat</h1>
+    <p>Invisible protection. Visible results. Guard your game with Phantom.</p>
+    <a href="#download" class="cta-button">Get Started</a>
+  </section>
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3><i class="fas fa-shield-alt"></i> Real-Time Detection</h3>
+      <p>Instantly detect and block cheaters before they affect gameplay.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="fas fa-brain"></i> Smart Learning</h3>
+      <p>Adapts to new threats using AI-powered anomaly detection.</p>
+    </div>
+    <div class="feature-card">
+      <h3><i class="fas fa-user-secret"></i> Undetectable</h3>
+      <p>Runs silently with minimal footprint and advanced obfuscation.</p>
+    </div>
+  </section>
 
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #9c27b0;
-}
+  <section id="download" class="download">
+    <h2>Download Phantom</h2>
+    <p>Get the latest version and start protecting your server.</p>
+    <a href="#" class="cta-button">Download Now</a>
+  </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-}
+  <section id="support" class="support">
+    <h2>Need Help?</h2>
+    <p>Our support team is ready to help you 24/7.</p>
+    <a href="#" class="cta-button">Contact Support</a>
+  </section>
 
-nav ul li {
-  margin-left: 2rem;
-}
+  <footer>
+    <p>&copy; 2025 Phantom Anti-Cheat. All rights reserved.</p>
+  </footer>
 
-nav ul li a {
-  color: #e0e0e0;
-  text-decoration: none;
-  font-size: 1rem;
-}
+  <div class="dynamic-island">
+    <div class="island-content">
+      <span class="island-icon"><i class="fas fa-bolt"></i></span>
+      <span class="island-text">Phantom is actively monitoring...</span>
+    </div>
+  </div>
 
-nav ul li a:hover {
-  color: #9c27b0;
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #9c27b0, #3e1a47);
-  border-radius: 0 0 50px 50px;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #e0e0e0;
-  margin-bottom: 2rem;
-}
-
-.cta-button {
-  background-color: #9c27b0;
-  color: #fff;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 1.1rem;
-}
-
-.cta-button:hover {
-  background-color: #7b1fa2;
-}
-
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 2rem;
-}
-
-.feature-card {
-  background-color: #1e1e1e;
-  padding: 2rem;
-  border-radius: 15px;
-  width: 30%;
-  text-align: center;
-}
-
-.feature-card h3 {
-  font-size: 1.5rem;
-  color: #9c27b0;
-}
-
-.feature-card p {
-  font-size: 1rem;
-  color: #e0e0e0;
-}
-
-.download, .support {
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-footer {
-  background-color: #1e1e1e;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 20px;
-  margin-top: 2rem;
-}
-
-.dynamic-island {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #3e1a47;
-  border-radius: 30px;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-
-.dynamic-island .island-content {
-  display: flex;
-  align-items: center;
-}
-
-.dynamic-island .island-icon {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-
-.dynamic-island .island-text {
-  font-size: 1.1rem;
-  color: #fff;
-}
+</body>
+</html>
