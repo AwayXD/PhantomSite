@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phantom Anti-Cheat</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -62,7 +62,7 @@
   <div class="modal" id="downloadModal">
     <div class="modal-content">
       <h3>Download Phantom</h3>
-      <p>Your download will begin shortly. If not, <a href="#" style="color: #9c27b0;">click here</a>.</p>
+      <p>Your download will begin shortly. If not, <a href="#">click here</a>.</p>
       <button class="close-modal" onclick="closeModal()">Close</button>
     </div>
   </div>
@@ -77,32 +77,6 @@
 
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    // Modal logic
-    function openModal() {
-      document.getElementById('downloadModal').style.display = 'flex';
-    }
-
-    function closeModal() {
-      document.getElementById('downloadModal').style.display = 'none';
-    }
-
-    // Dynamic island status simulation
-    const statusMessages = [
-      'Scanning memory...',
-      'Monitoring player actions...',
-      'No threats detected.',
-      'Checking for aimbots...',
-      'All systems normal.'
-    ];
-    let currentIndex = 0;
-    setInterval(() => {
-      document.getElementById('islandStatus').textContent = statusMessages[currentIndex];
-      currentIndex = (currentIndex + 1) % statusMessages.length;
-    }, 4000);
-  </script>
-
+  <script src="scripts.js"></script>
 </body>
 </html>
