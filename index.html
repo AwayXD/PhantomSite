@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Phantom Anti-Cheat</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav class="container">
       <div class="logo">Phantom</div>
       <ul>
         <li><a href="#features">Features</a></li>
@@ -21,37 +21,46 @@
     </nav>
   </header>
 
-  <section class="hero" data-aos="fade-up">
-    <h1>Phantom Anti-Cheat</h1>
-    <p>Invisible protection. Visible results. Guard your game with Phantom.</p>
-    <a href="#download" class="cta-button">Get Started</a>
-  </section>
-
-  <section id="features" class="features">
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-      <h3><i class="fas fa-shield-alt"></i> Real-Time Detection</h3>
-      <p>Instantly detect and block cheaters before they affect gameplay.</p>
-    </div>
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-      <h3><i class="fas fa-brain"></i> Smart Learning</h3>
-      <p>Adapts to new threats using AI-powered anomaly detection.</p>
-    </div>
-    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-      <h3><i class="fas fa-user-secret"></i> Undetectable</h3>
-      <p>Runs silently with minimal footprint and advanced obfuscation.</p>
+  <section class="hero">
+    <div class="container">
+      <h1>Phantom Anti-Cheat</h1>
+      <p>Invisible protection. Visible results.</p>
+      <a href="#download" class="cta-button">Get Started</a>
     </div>
   </section>
 
-  <section id="download" class="download" data-aos="zoom-in">
-    <h2>Download Phantom</h2>
-    <p>Get the latest version and start protecting your server.</p>
-    <button class="cta-button" onclick="openModal()">Download Now</button>
+  <section id="features" class="features container">
+    <div class="feature" data-aos="fade-up">
+      <i class="fas fa-shield-alt icon"></i>
+      <h3>Real-Time Detection</h3>
+      <p>Blocks cheaters before they ruin gameplay.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-brain icon"></i>
+      <h3>AI Learning</h3>
+      <p>Adapts to new threats automatically.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-user-secret icon"></i>
+      <h3>Stealth Mode</h3>
+      <p>Undetectable and lightweight.</p>
+    </div>
   </section>
 
-  <section id="support" class="support" data-aos="zoom-in-up">
-    <h2>Need Help?</h2>
-    <p>Our support team is ready to help you 24/7.</p>
-    <a href="#" class="cta-button">Contact Support</a>
+  <section id="download" class="download-section">
+    <div class="container" data-aos="zoom-in">
+      <h2>Download Phantom</h2>
+      <p>Start protecting your server today.</p>
+      <button onclick="openModal()" class="cta-button">Download Now</button>
+    </div>
+  </section>
+
+  <section id="support" class="support-section">
+    <div class="container" data-aos="fade-up">
+      <h2>Need Help?</h2>
+      <p>Contact our 24/7 support team.</p>
+      <a href="#" class="cta-button">Contact Support</a>
+    </div>
   </section>
 
   <footer>
@@ -59,23 +68,20 @@
   </footer>
 
   <!-- Modal -->
-  <div class="modal" id="downloadModal">
+  <div id="downloadModal" class="modal">
     <div class="modal-content">
-      <h3>Download Phantom</h3>
-      <p>Your download will begin shortly. If not, <a href="#">click here</a>.</p>
-      <button class="close-modal" onclick="closeModal()">Close</button>
+      <h3>Download Starting...</h3>
+      <p>If it doesn't start, <a href="#">click here</a>.</p>
+      <button onclick="closeModal()" class="cta-button small">Close</button>
     </div>
   </div>
 
   <!-- Dynamic Island -->
   <div class="dynamic-island">
-    <div class="island-content">
-      <span class="island-icon"><i class="fas fa-bolt"></i></span>
-      <span class="island-text" id="islandStatus">Phantom is actively monitoring...</span>
-    </div>
+    <i class="fas fa-bolt island-icon"></i>
+    <span id="islandStatus">Initializing security...</span>
   </div>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="scripts.js"></script>
 </body>
